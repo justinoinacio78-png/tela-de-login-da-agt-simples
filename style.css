@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor0: #0066c0;
+    --cor1: #1854ca;
+    --cor6: #F2F2F2;
+    --cor7: #FFFFFF;
+    --cor8: #0c285f;
+    --cor9: #14548C;
+}
+
+body{
+    background-color: var(--cor7);
+    width: 100vw;
+    height: 100vh;
+    font: normal 1em calibri;
+    color: rgb(43, 43, 43);
+    display: flex;
+}
+
+article{
+        display: none;
+}
+
+main{
+    background-color: var(--cor8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+
+section{
+    background-color: var(--cor7);
+    width: 70%;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.295);
+}
+
+img{
+    margin-bottom: 25px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+input#nif{
+    padding: 10px;
+    border: 1px solid rgb(146, 141, 141);
+    font: normal .9em arial;
+}
+
+input#next{
+    background-color: #687179;
+    border: 1px solid var(--cor0);
+    color: var(--cor6);
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+input#next:hover{
+    background-color: #3a444e;
+}
+
+input#btn{
+    background-color: var(--cor1);
+    color: var(--cor6);
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: .2s;
+}
+
+input#btn:hover{
+    background-color: #0f3072;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: var(--cor7);
+        display: flex;
+        flex-direction: row;
+    }
+
+    article{
+        align-self: flex-start;
+        width: 50%;
+        height: 100vh;
+        display: inline;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        line-height: 1.4em;
+        padding: 30px;
+        font-size: 1.1em;
+    }
+
+    h1{
+        color: var(--cor8);
+        margin-bottom: 10px;
+        font-size: 2.3em;
+    }
+
+    main{
+        order: 1;
+        align-self: flex-end;
+        width: 50%;
+    }
+
+    section{
+        width: 65%;
+        height: 50%;
+        padding-bottom: 400px;
+    }
+
+    img{
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+    input{
+    margin-top: 8px;
+}
+
+input#next{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+input#btn{
+    margin-top: 35px;
+}
+}
